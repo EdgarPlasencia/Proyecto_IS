@@ -1,2 +1,2 @@
 # Proyecto_IS
-Proyectp de Ingenieria de software
+Proyecto de Ingenieria de software
