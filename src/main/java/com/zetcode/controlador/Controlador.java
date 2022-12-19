@@ -1,6 +1,6 @@
 package com.zetcode.controlador;
 
-import com.zetcode.modelo.Cliente;
+import com.zetcode.modelo.Asistente;
 import com.zetcode.servicio.Servicio;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,7 +19,7 @@ public class Controlador {
     }
 
     @GetMapping("/users")
-    public List<Cliente> allUsers() {
+    public List<Asistente> allUsers() {
 
         return userService.findAll();
     }
