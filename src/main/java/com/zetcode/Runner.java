@@ -1,6 +1,7 @@
 package com.zetcode;
 
 import com.zetcode.modelo.Asistente;
+import com.zetcode.modelo.Cliente;
 import com.zetcode.repositorio.Repositorio;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,13 +27,9 @@ public class Runner implements CommandLineRunner {
 
         logger.info("initializing users");
 
-        var u1 = new Asistente("Paul", "Smith", "paul.smith@gmail.com");
+        var u1 = new Cliente("EdgarPlasencia", "0987654321", "correo@gmail.com", "Eloy Alfaro");
         userRepository.save(u1);
 
-        var u2 = new Asistente("Robert", "Black", "rb34@gmail.com");
-        userRepository.save(u2);
-
-        var u3 = new Asistente("John", "Doe", "jdoe@gmail.com");
-        userRepository.save(u3);
+        
     }
 }

@@ -14,16 +14,18 @@ public class Cotizacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String firstName;
-    private String lastName;
-    private String email;
+    private String tipo;
+    private String fecha;
+    private String descripcion;
+    private Double tot;
 
     public Cotizacion() {}
 
-    public Cotizacion(String firstName, String lastName, String email) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
+    public Cotizacion(String tipo, String fecha, String descripcion, Double tot) {
+        this.tipo = tipo;
+        this.fecha = fecha;
+        this.descripcion = descripcion;
+        this.tot = tot;
     }
 
     public Long getId() {
@@ -34,33 +36,33 @@ public class Cotizacion {
         this.id = id;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setFirstName(String firstName) {
+    public void setTipo(String tipo) {
 
-        this.firstName = firstName;
+        this.tipo = tipo;
     }
 
-    public String getLastName() {
+    public String getFecha() {
 
-        return lastName;
+        return fecha;
     }
 
-    public void setLastName(String lastName) {
+    public void setFecha(String fecha) {
 
-        this.lastName = lastName;
+        this.fecha = fecha;
     }
 
-    public String getEmail() {
+    public String getDescripcion() {
 
-        return email;
+        return descripcion;
     }
 
-    public void setEmail(String email) {
+    public void setDescripcion(String descripcion) {
 
-        this.email = email;
+        this.descripcion = descripcion;
     }
 
     @Override
@@ -69,23 +71,25 @@ public class Cotizacion {
         if (o == null || getClass() != o.getClass()) return false;
         Cotizacion user = (Cotizacion) o;
         return Objects.equals(id, user.id) &&
-                Objects.equals(firstName, user.firstName) &&
-                Objects.equals(lastName, user.lastName) &&
-                Objects.equals(email, user.email);
+                Objects.equals(tipo, user.tipo) &&
+                Objects.equals(fecha, user.fecha) &&
+                Objects.equals(descripcion, user.descripcion) &&
+                Objects.equals(tot, user.tot);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, email);
+        return Objects.hash(id, tipo, fecha, descripcion, tot);
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("User{");
         sb.append("id=").append(id);
-        sb.append(", firstName='").append(firstName).append('\'');
-        sb.append(", lastName='").append(lastName).append('\'');
-        sb.append(", email='").append(email).append('\'');
+        sb.append(", tipo='").append(tipo).append('\'');
+        sb.append(", fecha='").append(fecha).append('\'');
+        sb.append(", descripcion='").append(descripcion).append('\'');
+        sb.append(", tot='").append(tot).append('\'');
         sb.append('}');
         return sb.toString();
     }
