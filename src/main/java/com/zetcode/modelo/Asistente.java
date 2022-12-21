@@ -11,13 +11,11 @@ public class Asistente {
 
     public Asistente() {}
 
-   
-
     public void recibir() {
     
     }
 
-    public void devolver(Long id) {
+    public void devolver() {
         
     }
 

@@ -9,8 +9,6 @@ import javax.persistence.Table;
 @Table(name = "users")
 public class SoporteTec {
 
-   
-
     public SoporteTec() {}
 
     public void analizar(){
