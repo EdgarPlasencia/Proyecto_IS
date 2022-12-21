@@ -1,6 +1,5 @@
 package com.zetcode;
 
-import com.zetcode.modelo.Asistente;
 import com.zetcode.modelo.Cliente;
 import com.zetcode.repositorio.Repositorio;
 import org.slf4j.Logger;
