@@ -1,6 +1,6 @@
 package com.zetcode.servicio;
 
-import com.zetcode.modelo.Asistente;
+import com.zetcode.modelo.Cliente;
 import com.zetcode.repositorio.Repositorio;
 import org.springframework.stereotype.Service;
 
@@ -16,11 +16,11 @@ public class Servicio {
         this.userRepository = userRepository;
     }
 
-    public List<Asistente> findAll() {
+    public List<Cliente> findAll() {
 
         var it = userRepository.findAll();
 
-        var users = new ArrayList<Asistente>();
+        var users = new ArrayList<Cliente>();
         it.forEach(e -> users.add(e));
 
         return users;
