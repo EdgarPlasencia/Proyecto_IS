@@ -6,3 +6,4 @@ El siguiente proyecto busca implementar un sistema para organizar una empresa y 
 ¿ Porque Java?
 utilizamos Java porque es un lenguaje multiplataforma, además es un lenguaje robusto 
 ¿Porque es importante el correcto manejo de la base de datos?
+Facilita tener los datos agrupados en un solo lugar además de mejorar la organización del proyecto
